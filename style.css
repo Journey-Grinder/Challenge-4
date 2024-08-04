@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 680px;
+    display: flex;
+    height: 500px;
+    border-radius: 10px;
+
+}
+p{
+    width: 250px;
+    color:  hsl(228, 12%, 48%);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0;
+}
+img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.description div,header{
+    padding: 15px 15px 0;
+}
+header{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.7rem;
+    margin-top: 1rem;
+    
+}
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Fraunces";
+}
+.money{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transform: translateX(-5%);
+    margin-top: 0;
+    height: 62px;
+    padding: 0;
+}
+.cost{
+    font-family: "Fraunces";
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+.discount{
+    color: hsl(228, 12%, 48%);
+}
+
+.buy{
+    background-color: hsl(158, 36%, 37%);
+    width: 18rem;
+    text-align: center;
+    height: 3rem;
+    border-radius: 10px;
+    margin-top: 3rem;;
+    
+}
+.buy, .container a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 1s;
+    
+}
+
+
+
+svg{
+    margin-right: 1rem;
+    transform: translateY(6%);
+}
+.container a:hover .buy{
+    background-color: hsl(212, 21%, 14%);
+    
+}
+
+
+
+
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+    
+}
+@media (max-width:695px) {
+    .container{
+        width: 556px;
+    }
+    header{
+        font-size: 0.8rem;
+    }
+    .title{
+        font-size: 1.6rem;
+        width: 254.4px;
+    }
+    p{
+        width: 200px;
+    }
+    .money{
+        height: 49.6px;
+    }
+    .cost{
+        font-size: 1.6rem;
+    }
+    .discount{
+        font-size: 0.8rem;
+    }
+    .buy{
+        width: 14.4rem;
+        height: 2.4rem;
+        font-size: 0.88rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    svg{
+        margin-bottom: 12px;
+    }
+    span{
+        margin-bottom: 10px;
+    }
+    
+}
